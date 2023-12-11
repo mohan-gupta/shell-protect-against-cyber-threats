@@ -17,12 +17,12 @@ Given a body of text, find the source code hidden in the text. There might not b
 ## Solution
 - I have finetuned [RoBERTa base distilled](https://huggingface.co/deepset/roberta-base-squad2-distilled) and [DeBERTa v3 large](https://huggingface.co/deepset/deberta-v3-base-squad2), each for 30 epochs.
 - Both of these models were trained on SQUAD V2.
-- For Inference, I use the output  of the model which has higher logit score.
+- For Inference, I use the output  of the model which has a higher logit score.
 - Optimizer Adamw with Learning rate = 2e-5 and Cosine scheduler with warmup.
 - Dropout of 0.2
 
 ## Metrics
-- The evaluation metrics used in this competition is accuracy.
+- The evaluation metric used in this competition is accuracy.
 - First, MultiLabel Binarizer is applied on the predicted span of code.
-- Then, accuracy is computed.
-- I achieved <b>Rank 13</b> with a socre of <b>0.90227</b> on private leaderboard.
+- Then, accuracy is computed. I got <b>0.90227</b> accuracy on the private leaderboard.
+- I achieved <b>2nd Rank</b> in this Competition.
