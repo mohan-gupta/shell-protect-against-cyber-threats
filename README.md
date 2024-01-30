@@ -1,5 +1,8 @@
 # [Protect Against Cyber Threats](https://machinehack.com/hackathons/shell_hackathon_to_protect_against_cyber_threats/overview)
 
+This repository contains the solution for the hackathon, using this approach I was able to achieve <b>2nd rank</b> in this hackathon.<br>
+Here is the [link](https://analyticsindiamag.com/from-data-defiance-to-cyber-resilience-the-winners-of-shells-cyber-threat-hackathon/) to my interview with [Analytics India Magazine](https://analyticsindiamag.com/).
+
 ## Problem Statement
 <p>Can you construct a next-gen model, capable of detecting code that is present in a body of text? Be part of a mission to enhance the security and resilience of web applications. </p>
 
@@ -25,4 +28,3 @@ Given a body of text, find the source code hidden in the text. There might not b
 - The evaluation metric used in this competition is accuracy.
 - First, MultiLabel Binarizer is applied on the predicted span of code.
 - Then, accuracy is computed. I got <b>0.90227</b> accuracy on the private leaderboard.
-- I achieved <b>2nd Rank</b> in this Competition.
